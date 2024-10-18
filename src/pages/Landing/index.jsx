@@ -72,6 +72,11 @@ const LandingPage = () => {
         console.error("Login failed");
       }
     } catch (error) {
+      if (error.status == 404) {
+        setIsLogInModalOpen(false);
+        alert("User Record doesn't exist, kindly register!");
+        setIsSignUpModalOpen(true);
+      }
       console.error("Validation failed:", error);
     }
   };
