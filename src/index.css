@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hideOnMobile {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .hideOnMobile {
+    display: block;
+  }
+}
+
+.hideOnDesktop {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .hideOnDesktop {
+    display: none;
+  }
+}
+
+.goal-container {
+  margin-top: 40px;
+  max-width: 620px;
+}
+
+@media only screen and (max-width: 992px) {
+  .goal-container {
+    max-width: 310px;
+  }
+}
+
+.input-box:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.goal-item {
+  cursor: pointer;
+}
+
+.goal-item:hover {
+  border-color: #00C65E;
+}
